@@ -6,3 +6,4 @@ langchain-chroma
 langchain-openai
 chroma
 groq
+gunicorn
