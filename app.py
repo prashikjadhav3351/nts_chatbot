@@ -23,9 +23,7 @@ openai.api_key = os.environ['OPENAI_API_KEY']
 langchain_api_key = os.getenv("LANGCHAIN_API_KEY")
 
 # Embeddings and Chroma vector store
-embeddings = OpenAIEmbeddings(s
-    model="text-embedding-ada-002"
-)
+embeddings = OpenAIEmbeddings( model="text-embedding-ada-002")
 
 vector_store = Chroma(
     collection_name="website",
