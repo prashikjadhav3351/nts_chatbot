@@ -1,0 +1,123 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f6f9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Chat Container */
+#chat-container {
+    width: 100%;
+    max-width: 500px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    border: 1px solid #ddd;
+    height: 600px;
+}
+
+/* Header */
+#chat-header {
+    background-color: #28a745;
+    color: #fff;
+    padding: 16px;
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+/* Chat Box */
+#chat-box {
+    flex-grow: 1;
+    padding: 20px;
+    overflow-y: auto;
+    height: 100%;
+    background-color: #fafafa;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Message Styles */
+.message {
+    max-width: 80%;
+    padding: 12px;
+    border-radius: 10px;
+    font-size: 1em;
+    word-wrap: break-word;
+    position: relative;
+    animation: fadeIn 0.6s ease-out;
+}
+
+/* Bot Message */
+.bot-message {
+    background-color: #f1f1f1;
+    align-self: flex-start;
+    border: 1px solid #ddd;
+}
+
+/* User Message */
+.user-message {
+    background-color: #28a745;
+    color: #fff;
+    align-self: flex-end;
+}
+
+/* Typing Indicator */
+.typing-indicator {
+    display: inline-block;
+    width: 100px;
+    height: 10px;
+    background-color: #28a745;
+    border-radius: 5px;
+    animation: typingAnimation 1.5s infinite;
+}
+
+/* Input Area */
+#input-area {
+    display: flex;
+    padding: 15px;
+    border-top: 1px solid #ddd;
+    background-color: #fff;
+}
+
+#user-input {
+    flex-grow: 1;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+    outline: none;
+}
+
+/* Animation */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes typingAnimation {
+    0% {
+        width: 0;
+    }
+    50% {
+        width: 60px;
+    }
+    100% {
+        width: 100px;
+    }
+}

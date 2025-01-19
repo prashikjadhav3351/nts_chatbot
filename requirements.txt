@@ -1,0 +1,11 @@
+Flask==2.2.5
+re  # Regular expressions are built-in to Python, no need to install
+openai==0.27.8
+python-dotenv==1.0.0
+langchain==0.0.208
+langchain-chroma==0.0.1
+langchain-openai==0.0.1
+chroma  # Specify version if needed
+groq  # Specify version if needed
+json  # JSON is built-in to Python, no need to install
+datetime  # Built-in to Python, no need to install

@@ -1,0 +1,190 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Chat Container */
+#chat-container {
+    width: 100%;
+    max-width: 400px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    height: 500px;
+}
+
+/* Header */
+#chat-header {
+    background-color: #28a745;
+    color: #ffffff;
+    padding: 12px;
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: bold;
+    border-bottom: 2px solid #ddd;
+}
+
+/* Chat Box */
+#chat-box {
+    flex-grow: 1;
+    padding: 15px;
+    overflow-y: auto;
+    background-color: #fafafa;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Message Styles */
+.message {
+    max-width: 80%;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 1em;
+    word-wrap: break-word;
+    animation: fadeIn 0.2s ease-out;
+}
+
+/* Bot Message */
+.bot-message {
+    background-color: #f1f1f1;
+    align-self: flex-start;
+    border: 1px solid #ddd;
+}
+
+/* User Message */
+.user-message {
+    background-color: #28a745;
+    color: #ffffff;
+    align-self: flex-end;
+}
+
+
+/* Typing Indicator */
+.typing-indicator {
+    display: inline-block;
+    font-size: 24px;
+    color: #28a745;
+}
+
+.typing-indicator span {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    margin-right: 5px;
+    background-color: #28a745;
+    border-radius: 50%;
+    animation: typingAnimation 1.5s infinite ease-in-out;
+}
+
+/* Animation for Typing Indicator */
+@keyframes typingAnimation {
+    0% {
+        opacity: 0;
+        transform: translateY(0);
+    }
+    50% {
+        opacity: 1;
+        transform: translateY(-8px);
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(0);
+    }
+}
+
+/* Staggering the animation delays for each dot */
+.typing-indicator span:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.typing-indicator span:nth-child(2) {
+    animation-delay: 0.3s;
+}
+
+.typing-indicator span:nth-child(3) {
+    animation-delay: 0.6s;
+}
+
+/* Mic Button Animation */
+@keyframes mic-pulse {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(40, 167, 69, 0.7);
+    }
+    50% {
+        transform: scale(1.2);
+        box-shadow: 0 0 10px 10px rgba(40, 167, 69, 0.2);
+    }
+    100% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(40, 167, 69, 0);
+    }
+}
+
+/* Active animation class for the mic button */
+.mic-active {
+    animation: mic-pulse 1.5s infinite;
+}
+
+#input-area {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+#user-input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#send-btn {
+    padding: 8px 16px;
+    background: #A5D6A7; /* Light green */
+    color: black;
+    border: none;
+    border-radius: 4px;
+    border: 2px solid #388E3C; /* Border color */
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    box-shadow: inset 2px 2px 4px rgba(0, 0, 0, 0.1), inset -2px -2px 4px rgba(255, 255, 255, 0.2);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#send-btn:hover {
+    background: #388E3C;
+    color: white;
+}
+
+#mic-btn {
+    padding: 10px;
+    background-color: #28A745;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+#mic-btn svg {
+    color: white;
+}

@@ -1,0 +1,364 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+   
+    /* line-height: 1.6; Adds spacing between lines for better readability */
+    /* color: #333; Ensures text is dark enough for visibility */
+}
+
+@media (max-width: 768px) {
+    body {
+        /* background-color: #ffffff; Change background color on smaller screens */
+        font-size: 14px; /* Adjust font size for mobile devices */
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 13px; /* Further reduce font size for very small screens */
+    }
+}
+
+
+/* Chatbot Icon */
+#chat-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: linear-gradient(135deg, #3aa560 0%, #b7e66c 100%);
+    color: white;
+    border-radius: 50%;
+    padding: 15px;
+    cursor: pointer;
+    font-size: 24px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+/* Chat Container */
+#chat-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;  
+    width: 350px; /* Keeps the max width similar to the desktop version */
+    height: 450px; /* Adjusted height for mobile screens */
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    z-index: 999;
+}
+
+/* Responsive styles for screens up to 480px */
+@media screen and (width: 480px) {
+    #chat-container {
+        width: 30%;    /* Make the container take up most of the screen width */
+        height: 60%; /* Adjust the height for better fit on mobile */
+        bottom: 10px;  /* Adjust the bottom position for smaller screens */
+        right: 10px;   /* Adjust the right position for smaller screens */
+    }
+}
+
+/* Initially Hide Chatbot */
+#chat-container.hidden {
+    display: none;
+}
+
+/* Header */
+#chat-header {
+    background: linear-gradient(135deg, #3aa560 0%, #b7e66c 100%);
+    color: white;
+    padding: 30px 20px;
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #ddd;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+#close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    color: rgb(0, 0, 0);
+    border: none;
+    font-size: 20px;         
+    cursor: pointer;
+    transition: transform 0.2s ease, color 0.3s ease;
+}
+
+#close-btn:hover {
+    color: #FF6347;
+    transform: scale(1.1);
+}
+
+/* Chat Box */
+#chat-box {
+    flex-grow: 1;
+    padding: 15px;
+    overflow-y: auto;
+    background-color: #fafafa;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Message Styles */
+.message {
+    max-width: 80%;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 1em;
+    word-wrap: break-word;
+    animation: fadeIn 0.2s ease-out;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow for better depth */
+}
+
+.bot-message {
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    align-self: flex-start;
+    color: #333;
+    font-family: 'Arial', sans-serif;
+    font-size: 0.95em;
+    padding: 15px 20px;
+    line-height: 1.5;
+    position: relative;
+}
+.bot-message::before {
+    content: '';
+    position: absolute;
+    top: 15px;
+    left: -10px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width:  10px 10px 0;
+    border-color: transparent transparent transparent;
+}
+.bot-message ul {
+    margin: 10px 0;
+    padding-left: 20px;
+}
+
+.bot-message ul li {
+    margin-bottom: 5px;
+    list-style-type: disc; /* Adds bullet points */
+}
+
+
+.user-message {
+    background-color: #28a745;
+    color: #ffffff;
+    align-self: flex-end;
+    font-family: 'Arial', sans-serif;
+    padding: 15px 20px;
+    border: 1px solid #28a745;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.user-message::before {
+    content: '';
+    position: absolute;
+    top: 15px;
+    right: -10px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent #28a745;
+}
+
+/* Typing Indicator */
+.typing-indicator {
+    display: inline-block;
+    font-size: 24px;
+    color: #28a745;
+}
+
+.typing-indicator span {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    margin-right: 5px;
+    background-color: #28a745;
+    border-radius: 50%;
+    animation: typingAnimation 1.5s infinite ease-in-out;
+}
+
+@keyframes typingAnimation {
+    0% {
+        opacity: 0;
+        transform: translateY(0);
+    }
+    50% {
+        opacity: 1;
+        transform: translateY(-8px);
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(0);
+    }
+}
+
+.typing-indicator span:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.typing-indicator span:nth-child(2) {
+    animation-delay: 0.3s;
+}
+
+.typing-indicator span:nth-child(3) {
+    animation-delay: 0.6s;
+}
+
+/* Input Area */
+/* #input-area {
+    padding: 5px;
+    border-top: 1px solid #ddd;
+} */
+
+.input-wrapper {
+    /* display: flex; */
+    /* align-items: center; */
+    /* border: 1px solid #ddd; */
+    /* border-radius: 25px; */
+    /* padding: 5px 10px; */
+    /* background-color: #f9f9f9; */
+    /* box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1); */
+}
+
+#user-input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+ #send-btn {
+    background: linear-gradient(135deg, #3aa560 0%, #6dae17 100%);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex; 
+    justify-content:center;
+    align-items: center;
+    font-size: 22px;
+    cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.3s ease;
+    display: none;
+
+    margin-left:4px;
+} 
+
+#send-btn:hover {
+    background-color: #228B22;
+    transform: scale(1.1);
+}
+
+#send-btn:active {
+    transform: scale(0.95);
+}
+
+
+
+/* Mic Button Styles */
+#mic-btn {
+    padding: 15px ;
+    background: linear-gradient(135deg, #3aa560 0%, #b7e66c 100%);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+/* Scale effect on active tap */
+#mic-btn:active {
+    transform: scale(0.95);
+}
+
+/* SVG color */
+#mic-btn svg {
+    color: white;
+    z-index: 2; /* Ensure it stays above effects */
+    transition: transform 0.3s ease;
+}
+
+/* Active state with blowing effect */
+#mic-btn.mic-active {
+    box-shadow: 0 0 15px rgba(40, 167, 69, 0.7), 0 0 30px rgba(40, 167, 69, 0.5);
+    animation: pulse 1.5s infinite ease-in-out;
+}
+
+/* Pulsating animation for blowing effect */
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 15px rgba(40, 167, 69, 0.7), 0 0 30px rgba(40, 167, 69, 0.5);
+        transform: scale(1);
+    }
+    50% {
+        box-shadow: 0 0 20px rgba(40, 167, 69, 0.9), 0 0 40px rgba(40, 167, 69, 0.6);
+        transform: scale(1.05);
+    }
+    100% {
+        box-shadow: 0 0 15px rgba(40, 167, 69, 0.7), 0 0 30px rgba(40, 167, 69, 0.5);
+        transform: scale(1);
+    }
+}
+
+/* Optional glowing ring around the button */
+#mic-btn::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 2px solid rgba(40, 167, 69, 0.5);
+    border-radius: 50%;
+    animation: glow 1.5s infinite ease-in-out;
+    opacity: 0;
+    pointer-events: none;
+    z-index: 1; /* Below the SVG */
+}
+
+/* Glow effect */
+@keyframes glow {
+    0% {
+        transform: scale(1);
+        opacity: 0.8;
+    }
+    50% {
+        transform: scale(1.5);
+        opacity: 0.3;
+    }
+    100% {
+        transform: scale(2);
+        opacity: 0;
+    }
+}
+
+/* Activate glowing ring only when mic is active */
+#mic-btn.mic-active::before {
+    opacity: 1;
+}
+

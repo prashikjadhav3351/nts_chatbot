@@ -1,0 +1,5 @@
+<div class="message bot-message" id="greeting">{{ greeting }}</div>
+
+
+
+If there is a related URL, include it in a clean format without brackets (e.g., []), parentheses (e.g., . ,  ()), or any trailing punctuation (e.g., period, comma, etc.).

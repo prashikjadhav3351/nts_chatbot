@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NTS Q&A System</title>
+    <link rel="stylesheet" href="static/css/style2.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Chatbot icon -->
+    <div id="chat-icon" onclick="openChatbot()">
+        <i class="fas fa-comment"></i> <!-- You can use any icon here -->
+    </div>
+
+     <!-- Chatbot container -->
+     <div id="chat-container" class="hidden"> 
+        <div id="chat-header">
+            NTS Chatbot
+            <button id="close-btn" onclick="closeChatbot()">X</button>
+        </div>
+        <div id="chat-box">
+            <div class="message bot-message" id="greeting">Hello! How can I help you today?</div>
+            <div class="message bot-message" id="greeting">{{ greeting }}</div>
+        </div>
+        <div id="input-area">
+            <input type="text" id="user-input" placeholder="Type your question..." onkeypress="handleKeyPress(event)"
+                aria-label="Type your question">
+            <button id="send-btn" onclick="sendMessage(false)" aria-label="Send message">Send</button>
+
+            <button id="mic-btn" onclick="startVoiceRecognition()" aria-label="Start voice recognition">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+                    <path
+                        d="M12 1a3 3 0 00-3 3v7a3 3 0 006 0V4a3 3 0 00-3-3zm7 7v3a7 7 0 01-14 0V8a1 1 0 10-2 0v3a9 9 0 0017.94 1H20V8a1 1 0 10-2 0zM13 19.93V23h-2v-3.07a9.05 9.05 0 002 0z" />
+                </svg>
+            </button>
+        </div>
+    </div> 
+
+   
+  
+
+    
+
+    <script src="{{ url_for('static', filename='js/scriptfortoggle.js') }}"></script>
+
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+
+</body>
+
+</html>

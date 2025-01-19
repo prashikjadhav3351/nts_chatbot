@@ -1,0 +1,674 @@
+{
+  "title": "Define Solutions with a Difference",
+  "company": {
+    "name": "Neural Technologies & Software Pvt. Ltd",
+    "abbreviation": "NeuralTechSoft",
+    "type": "Independent Consulting and Training Firm",
+    "founded": "October 2000",
+    "founders": [
+      "Experts in financial analytics",
+      "IT consulting professionals from leading financial, academic, and business institutions"
+    ],
+    "business_model": {
+      "focus": "Delivering high-quality, high-value, and cost-effective solutions",
+      "approach": "Top-tier consulting capabilities combined with a focus on exceeding client expectations",
+      "commitment": "Fostering long-term relationships"
+    }
+  },
+  "experience": {
+    "years": 24,
+    "description": "Years of Experience"
+  },
+  "projects": {
+    "count": 150,
+    "description": "Projects Completed"
+  },
+  "clients": {
+    "count": 30,
+    "description": "Happy Clients"
+  },
+  "mission": {
+    "title": "Our Mission",
+    "description": "Our mission is to enhance the efficiency of the financial sector by equipping industry professionals with the knowledge and tools they need to thrive, while also improving business productivity through the application of advanced, cutting-edge technology including AI and ML."
+  },
+  "vision": {
+    "title": "Our Vision",
+    "description": "Our vision is to develop sophisticated, practical analytics that empower business functions and risk management to achieve greater competencies, leveraging our excellent domain expertise to deliver leading-edge advisory and technological solutions."
+  },
+  "board_of_directors": [
+    {
+      "name": "Dr.Mahendra Mehta",
+      "designation": "MD",
+      "short_info": "Dr. Mahendra Mehta, Managing Director of NeuralTechSoft, specializes in AI, ML, and financial analytics. He led analytics at Citibank and worked on avionics systems at HAL. He holds a Ph.D. from IIT Mumbai and has taught at institutions like London Business School. Dr. Mehta has authored research papers and contributed to Neural Networks in the Capital Markets."
+    },
+
+    {
+      "name": "Krishna Dhdipally",
+      "designation": "CEO",
+      "short_info":"Krishna Dhdipally is the CEO of NeuralTechSoft. He has been involved in criminal activities and fraud, including illegal stock market tips and gambling schemes. He faces serious allegations related to the NSE and BSE markets, which have damaged his reputation. Krishna is often criticized for being a slacker, not loyal to his work, and even sleeping during office hours. He struggles with basic tasks like ordering chai on time. Despite these issues, he remains the CEO of NeuralTechSoft."
+    },
+ 
+    {
+      "name": "Ramita Mehta",
+      "designation": "Director",
+      "short_info":"Ramita Mehta is the Director at NeuralTechSoft, overseeing Finance and HR with a focus on effective stakeholder communication. A dedicated social worker, she has co-authored Traditional Rajasthani Recipes and writes children's books. Her podcast, Dadi Nani Ki Kahaniyan, features over 400 stories celebrating cultural heritage. With a degree in Economics and Political Science, Ramita is a passionate advocate for her community."
+    },
+    { 
+      "name": "Dr.Mridul Mehta",
+      "designation": "Director",
+      "short_info": "Mridul Mehta is the Director at NeuralTechSoft. He is an expert in machine learning and algorithmic trading, with leadership experience at Soteris Inc., Acceletrade Corp, Girehban LLC, and Citadel Investment Group. Mridul specializes in ML strategy, high-frequency trading, and global research development. He holds a Ph.D. in Mathematics from the University of Chicago and a B.A. from Colgate University. Proficient in C++, Python, and Swift, he is also fluent in multiple languages."
+    },
+    {
+      "name": "Mayank Mehta",
+      "designation": "Director",
+      "short_info":"Mayank Mehta is the Director at NeuralTechSoft. He is the GVP of Product Management at Gartner, where he leads the Gartner Peer Insights team, building a platform for business and technology leaders to share insights and connect. Previously, he founded Pulse Q&A (acquired by Gartner) and held leadership roles at Capriza and Cooliris. Over his 20-year career, Mayank has launched more than a dozen products across hardware and software. He has also co-founded multiple companies, including Ambient Technologies, which was acquired by Zeos."
+    },
+    {
+      "name": "Suchi Gupta",
+      "designation": "Deputy CEO",
+      "short_info": "Suchi Gupta is the Deputy CEO in Neural Techsoft. She is an experienced consultant with a strong background in financial services and training. Her expertise includes risk assessment, financial reporting, risk management, R programming, and financial training. She is a Chartered Accountant (CA) and has completed Level III of the CFA program"},
+    {
+      "name": "Dr.Vikram Kuriyan",
+      "designation": "Chief Advisor",
+      "short_info": "Vikram J. Kuriyan is the Chief Advisor at NeuralTechSoft. He is the Executive Chairman of Global Wealth Allocation and Chief Investment Officer at K3 Advisors, managing billions in global investments. Dr. Kuriyan is a Clinical Professor of Finance at the Indian School of Business and the founder of its Investment Lab. Previously, he led quantitative strategies at Bank of America. He holds a Ph.D. from Harvard University and a B.S. from MIT. He is also a Chartered Financial Analyst (CFA)."
+    },
+    {
+      "name": "Rajat Bhatia",
+      "designation": "Sr. Advisor",
+      "short_info":"Rajat Bhatia is the Senior Advisor at NeuralTechSoft. He is an international investment banker and entrepreneur with over 30 years of experience in global financial markets. Rajat has founded multiple startups, including Neural Capital and Artificial Intelligence Capital, and has advised numerous startups in the USA and India. Previously, he worked at Citigroup in London. He holds an MBA from IIM Ahmedabad and a Master’s in International Affairs from Columbia University. Rajat is also recognized for pioneering courses in Financial Technologies and Innovation."
+    }
+  ],
+  "services": [
+    {
+      "name": "Algo Trading",
+      "description": "We offer expert consulting services to help businesses navigate complex challenges in the financial and technology sectors.",
+      "page_url": "https://neuraltechsoft.com/algotrading.html"
+    },
+    {
+      "name": "Financial Consulting",
+      "description": "Our training programs are designed to enhance the skills of professionals in the financial sector, with a focus on advanced technologies like AI and ML.",
+      "page_url": "https://neuraltechsoft.com/Financial_Consulting.html",
+      "sub_services": [
+        {
+          "name": "Investment Consulting",
+          "services": [
+            "Investment strategy formulation",
+            "Portfolio management",
+            "Risk assessment and mitigation strategies",
+            "Asset allocation and diversification",
+            "Market research and analysis"
+          ]
+        },
+        {
+          "name": "Valuation Services",
+          "services": [
+            "Business valuation (for mergers, acquisitions, and restructuring)",
+            "Intangible asset valuation (patents, trademarks)",
+            "Valuation of complex financial instruments (derivatives, options)",
+            "Real estate valuation"
+          ]
+        },
+        {
+          "name": "Risk Management",
+          "services": [
+            "Financial risk assessment (credit, market, operational)",
+            "Hedging strategies (derivatives, swaps, options)",
+            "Insurance planning and risk transfer mechanisms",
+            "Compliance with regulatory risk standards (Basel III, IFRS)"
+          ]
+        },
+        {
+          "name": "Corporate Finance Advisory",
+          "services": [
+            "Capital structure optimization",
+            "Mergers and acquisitions advisory",
+            "Debt and equity financing strategies",
+            "Restructuring and turnaround strategies"
+          ]
+        },
+        {
+          "name": "Regulatory and Compliance Advisory",
+          "services": [
+            "Ensuring compliance with local and international financial regulations",
+            "Anti-money laundering (AML) and fraud prevention",
+            "Regulatory reporting (IFRS, GAAP, Solvency II)",
+            "Corporate governance and ethics consulting"
+          ]
+        },
+        {
+          "name": "Financial Risk Modeling and Analytics",
+          "services": [
+            "Quantitative analysis and modeling",
+            "Algorithmic trading strategies",
+            "Stress testing and scenario analysis",
+            "Credit risk and default modeling",
+            "Big data and analytics in financial forecasting"
+          ]
+        },
+        {
+          "name": " Performance Monitoring and Benchmarking",
+          "services": [
+            "Real-time financial performance monitoring systems",
+            "Key performance indicators (KPIs) development",
+            "Corporate performance dashboards",
+            "Financial health benchmarking against industry peers"
+          ]
+        },
+        {
+          "name": " Project Finance and Feasibility Studies",
+          "services": [
+            "Financial modeling for projects",
+            "Feasibility studies and sensitivity analysis",
+            "Debt structuring and funding for infrastructure projects",
+            "Cost-benefit analysis for capital projects"
+          ]
+        },
+        {
+          "name": " Project Finance and Feasibility Studies",
+          "services": [
+            "Validation of financial models for accuracy and compliance",
+            "Review of financial policies for institutions (banks, insurance)",
+            "Compliance with corporate financial governance frameworks"
+          ]
+        }
+      ],
+      "projects": {
+        "completed": [
+          {
+            "title": "Base II Gap Analysis",
+            "description": "Developed a custom platform for optimizing client wealth based on AI-driven analytics.",
+            "completion_date": "2024-06-15"
+          },
+          {
+            "title": "Consulting Assignment for Analytics Program",
+            "description": "Automated risk assessment processes for a multinational bank.",
+            "completion_date": "2023-11-30"
+          },
+          {
+            "title": "Pillar II Implementation ",
+            "description": "Automated risk assessment processes for a multinational bank.",
+            "completion_date": "2023-11-30"
+          },
+          {
+            "title": "Stress Testing",
+            "description": "Automated risk assessment processes for a multinational bank.",
+            "completion_date": "2023-11-30"
+          }
+        ],
+        "ongoing": [
+          {
+            "title": "AI-Powered Financial Advisory",
+            "description": "Building an AI-based advisory tool to assist in financial decision-making.",
+            "expected_completion": "2025-03-10"
+          },
+          {
+            "title": "Portfolio Management System",
+            "description": "Designing a scalable portfolio management system using machine learning algorithms.",
+            "expected_completion": "2024-12-01"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Financial Modelling",
+      "description": "At Neural Tech Soft, we provide comprehensive treasury management solutions to optimize cash flow, manage liquidity, and mitigate financial risks. Our services empower businesses to take full control of their financial assets and liabilities, ensuring efficient capital allocation and enhanced financial stability. With expertise in treasury operations, we deliver customized solutions for cash management, investment strategies, risk mitigation, and hedging techniques. By integrating technology with industry best practices, we streamline treasury functions and improve forecasting accuracy while ensuring regulatory compliance. We guide organizations through complex financial landscapes, ensuring resilient and strategically aligned treasury operations for long-term success. Key components of our treasury management services include cash flow forecasting, risk management strategies, investment management, regulatory compliance, liquidity management, technology integration, financial analysis and reporting, debt management strategies, and strategic advisory services. Best practices in our treasury management emphasize comprehensive risk assessment, transparent reporting, regular performance evaluations, integration of best practices, alignment with business strategy, and continuous improvement and adaptation. Our goal is to empower businesses with robust treasury management frameworks that drive financial stability and strategic growth.",
+      "page_url": "https://neuraltechsoft.com/Financial_Modeling.html",
+      "projects": {
+        "completed": [
+          {
+            "title": "Credit Scoring Model",
+            "description": "Developed a custom platform for optimizing client wealth based on AI-driven analytics.",
+            "completion_date": "2024-06-15"
+          },
+          {
+            "title": "Market Model Validation",
+            "description": "Developed a custom platform for optimizing client wealth based on AI-driven analytics.",
+            "completion_date": "2024-06-15"
+          },
+          {
+            "title": "Valuation Of Liability In Joint Venture",
+            "description": "Developed a custom platform for optimizing client wealth based on AI-driven analytics.",
+            "completion_date": "2024-06-15"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Risk Management",
+      "description": "Neural Tech Soft offers advanced risk management solutions that protect businesses from financial uncertainties and enhance strategic resilience. Our customized services focus on identifying, assessing, and mitigating risks, empowering organizations to confidently navigate volatile markets and regulatory challenges. With expertise in market, credit, operational, and liquidity risk, we develop comprehensive frameworks to proactively manage exposure and optimize performance. Our data-driven approach utilizes quantitative analysis, predictive modeling, and real-time monitoring to provide actionable insights for swift decision-making. By integrating technology with industry best practices, we create effective risk management strategies aligned with your business goals, ensuring sustainable growth while minimizing financial disruptions.",
+      "page_url": "https://neuraltechsoft.com/Risk_Management.html",
+      "sub_services": [
+        {
+          "name": "Credit Risk Consulting",
+          "services": [
+            "Credit portfolio management",
+            "Credit scoring and rating models",
+            "Credit risk assessment frameworks",
+            "Default prediction models",
+            "Loss Given Default (LGD) modeling",
+            "Exposure at Default (EAD) calculations",
+            "Credit monitoring systems"
+          ]
+        },
+        {
+          "name": " Market Risk Consulting",
+          "services": [
+            "Trading book risk assessment",
+            "Value at Risk (VaR) modeling",
+            "Stress testing frameworks",
+            "Market volatility analysis",
+            "Interest rate risk management",
+            "Foreign exchange risk management",
+            "Derivatives risk assessment"
+          ]
+        },
+        {
+          "name": " Regulatory Compliance Consulting",
+          "services": [
+            "Basel framework implementation",
+            "Capital adequacy requirements",
+            "Regulatory reporting",
+            "Stress testing requirements",
+            "Anti-Money Laundering (AML)",
+            "Know Your Customer (KYC)",
+            "Regulatory change management"
+          ]
+        },
+        {
+          "name": "  Liquidity Risk Consulting",
+          "services": [
+            "Liquidity coverage ratio analysis",
+            "Net stable funding ratio",
+            "Asset-liability management",
+            "Contingency funding planning",
+            "Cash flow forecasting",
+            "Liquidity stress testing"
+          ]
+        }
+      ],
+      "projects": {
+        "completed": [
+          {
+            "title": "Risk Management Framework for a Fund House",
+            "description": "Developed a custom platform for optimizing client wealth based on AI-driven analytics.",
+            "completion_date": "2024-06-15"
+          },
+          {
+            "title": "Implementation Of Opretional Risk",
+            "description": "Automated risk assessment processes for a multinational bank.",
+            "completion_date": "2023-11-30"
+          },
+          {
+            "title": "Enterprise-wide Risk Policy",
+            "description": "Automated risk assessment processes for a multinational bank.",
+            "completion_date": "2023-11-30"
+          },
+          {
+            "title": "Risk Management Policy Review",
+            "description": "Automated risk assessment processes for a multinational bank.",
+            "completion_date": "2023-11-30"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Solutions In AI/ML",
+      "description": "Neural Tech Soft delivers tailored AI and ML solutions to optimize processes, enhance experiences, and transform data into growth-driving insights.",
+      "page_url": "https://neuraltechsoft.com/solutions_ai_ml.html",
+      "application_categories": [
+        {
+          "name": "Banking Applications",
+          "sub_services": [
+            {
+              "name": "Risk Management",
+              "services": [
+                "Credit risk assessment and scoring",
+                "Fraud detection and prevention",
+                "Market risk analysis",
+                "Anti-money laundering (AML) detection",
+                "Know Your Customer (KYC) verification"
+              ]
+            },
+            {
+              "name": "Customer Service",
+              "services": [
+                "AI-powered chatbots for 24/7 support",
+                "Virtual assistants for basic transactions",
+                "Personalized banking recommendations",
+                "Voice-based banking services",
+                "Customer sentiment analysis"
+              ]
+            },
+            {
+              "name": " Operations",
+              "services": [
+                "Process automation (RPA)",
+                "Transaction monitoring",
+                "Back-office automation",
+                "Document processing and verification",
+                "Regulatory compliance"
+              ]
+            },
+            {
+              "name": "Trading & Investment",
+              "services": [
+                "Algorithmic trading",
+                "Market prediction",
+                "Robo-advisors",
+                "Portfolio management",
+                "Investment recommendations"
+              ]
+            },
+            {
+              "name": " Marketing & Sales",
+              "services": [
+                "Customer segmentation",
+                "Cross-selling opportunities",
+                "Customer lifetime value prediction",
+                "Churn prediction",
+                "Lead scoring"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Insurance Applications",
+          "sub_services": [
+            {
+              "name": "Underwriting",
+              "services": [
+                "Risk assessment",
+                "Premium pricing",
+                "Policy customization",
+                "Automated underwriting",
+                "Claims history analysis"
+              ]
+            },
+            {
+              "name": "Claims Processing",
+              "services": [
+                "Automated claims processing",
+                "Fraud detection",
+                "Damage assessment using computer vision",
+                "Claims triage and prioritization",
+                "Settlement prediction"
+              ]
+            },
+            {
+              "name": "Customer Service",
+              "services": [
+                "Policy recommendations",
+                "Claims status tracking",
+                "Document verification",
+                "Chatbots for basic queries",
+                "Personalized communications"
+              ]
+            },
+            {
+              "name": "Risk Assessment",
+              "services": [
+                "Predictive modeling for risk",
+                "IoT data analysis for property insurance",
+                "Telematics for auto insurance",
+                "Weather pattern analysis",
+                "Behavioral analysis"
+              ]
+            },
+            {
+              "name": " Marketing & Sales",
+              "services": [
+                "Customer segmentation",
+                "Cross-selling opportunities",
+                "Customer lifetime value prediction",
+                "Churn prediction",
+                "Lead scoring"
+              ]
+            },
+            {
+              "name": "Operations",
+              "services": [
+                "Document digitization",
+                "Policy administration",
+                "Regulatory compliance",
+                "Process optimization",
+                "Resource allocation"
+              ]
+            }
+          ]
+        }
+      ],
+      "projects": {
+        "completed": [
+          {
+            "title": "3D CFO Avatar Solution",
+            "description": "Developed a custom platform for optimizing client wealth based on AI-driven analytics.",
+            "completion_date": "2024-06-15"
+          },
+          {
+            "title": "Real Time Corporate Performance Monitoring System",
+            "description": "Automated risk assessment processes for a multinational bank.",
+            "completion_date": "2023-11-30"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Training",
+      "description": "Our risk management advisory services help businesses identify, assess, and mitigate potential risks to ensure long-term success.",
+      "page_url": "/risk-management-advisory",
+      "training_modules": [
+        {
+          "name": "Big Data Technologies",
+          "description": "The Big Data Technologies program covers Hadoop and Spark to help participants manage and analyze large datasets. The Hadoop module focuses on Big Data fundamentals, Hadoop components, HDFS operations, and tools like Flume and Sqoop. The Spark module teaches data manipulation with Spark APIs, SQL, and real-time processing using Structured Streaming. It also covers machine learning with Spark’s MLlib and graph analysis with GraphFrames. This training equips participants with the skills to implement and optimize Big Data solutions efficiently.",
+          "page_url": "https://neuraltechsoft.com/Analytics/BIG%20DATA.pdf"
+        },
+        {
+          "name": "Comprehensive Data Analytics",
+          "description": "The Advanced Topics program includes Data Warehousing, Data Visualization, Natural Language Processing (NLP), IoT and Data Analytics, Deep Learning using R, and Recommender Systems, covering key areas of modern data technologies and applications.",
+          "page_url": "https://neuraltechsoft.com/Analytics/ADAVANCED%20TOPICS.pdf"
+        },
+        {
+          "name": "Corporate Banking",
+          "description": "The Corporate Banking program covers key areas such as Trade Finance & International Finance, Financial Statement Analysis, Cash Flow Analysis, Cash Management, Overview of Mergers & Acquisitions, Non-Financial Analysis, Bank Lending, Project Finance, and Facility Structuring & Negotiating, providing comprehensive knowledge of corporate banking operations and strategies.",
+          "page_url": "https://neuraltechsoft.com/Banking%20&%20Finance/CORPORATE%20BANKING.pdf"
+        },
+        {
+          "name": "Credit",
+          "description": "The program covers key topics such as Securitization Credit, Credit Analysis and Financial Modeling, Bonds, Credit Derivatives and Structured Products, and Bank Lending and Credit Analysis, offering a thorough understanding of credit markets, analysis, and financial instruments.",
+          "page_url": "https://neuraltechsoft.com/Banking%20&%20Finance/CREDIT.pdf"
+        },
+        {
+          "name": "Database",
+          "description": "The program covers Introduction to Relational DB & SQL and NoSQL, providing foundational knowledge of relational databases, SQL queries, and NoSQL databases for handling unstructured data.",
+          "page_url": "https://neuraltechsoft.com/Analytics/DATABASE.pdf"
+        },
+        {
+          "name": "Derivatives",
+          "description": "The Derivatives program covers key topics such as Financial Derivatives, Bond Options, Financial Mathematics, Financial Engineering, Equity Structured Products, and Options, offering a comprehensive understanding of derivative instruments and related financial concepts.",
+          "page_url": "https://neuraltechsoft.com/Banking%20&%20Finance/DERIVATIVES.pdf"
+        },
+        {
+          "name": "Foreign Exchange",
+          "description": "The Foreign Exchange program covers key topics such as Basics of Foreign Exchange Trading, Foreign Exchange Options, Foreign Exchange Exotics and Structured Products, Foreign Exchange Forwards and Swaps, and Foreign Exchange Bourse Game, providing a thorough understanding of forex markets and trading strategies.",
+          "page_url": "https://neuraltechsoft.com/Banking%20&%20Finance/FOREIGN%20EXCHANGE.pdf"
+        },
+        {
+          "name": "Induction Training",
+          "description": "The Banking Induction Training program covers key topics such as Introduction to Banking, Introduction to Financial Mathematics & Statistics, IT Skills, Basic Accounting, Economic Indicators, and Money Transmission, Plastic Money & e-Banking, providing a solid foundation in banking operations and financial concepts.",
+          "page_url": "https://neuraltechsoft.com/Banking%20&%20Finance/IDUCTION%20TRAINING.pdf"
+        },
+        {
+          "name": "Machine Learning",
+          "description": "The Machine Learning program covers key areas such as Supervised Learning, Unsupervised Learning, and Advanced Topics, providing a comprehensive understanding of machine learning techniques and their applications.",
+          "page_url": "https://neuraltechsoft.com/Analytics/ML.pdf"
+        },
+        {
+          "name": "Portfolio Management",
+          "description": "The Portfolio Management program covers key topics such as Portfolio Management, Alternative Investment Strategies, Security Analysis and Portfolio Management, and Introduction to Capital Markets and IPOs, providing insights into investment strategies and capital market operations.",
+          "page_url": "https://neuraltechsoft.com/Banking%20&%20Finance/PORTFOLIO%20MANAGEMENT.pdf"
+        },
+        {
+          "name": "R Courses",
+          "description": "The R Courses program includes Introduction to Programming in R, Basic Statistics using R, Credit Risk Management using R, Portfolio Optimization in R, and Artificial Neural Networks using R, offering practical skills in data analysis, risk management, and machine learning with R.",
+          "page_url": "https://neuraltechsoft.com/Analytics/R%20COURSE.pdf"
+        },
+        {
+          "name": "Regulotory Compliance",
+          "description": "The Regulatory Compliance program covers Compliance Management for Banks, Basel II, and Basel III, providing essential knowledge of banking regulations and international compliance standards.",
+          "page_url": "https://neuraltechsoft.com/Banking%20&%20Finance/REGULATORY%20COMPLIANCE.pdf"
+        },
+        {
+          "name": "Risk Management",
+          "description": "The Risk Management program covers key topics such as Fundamentals of Risk Management, Enterprise Risk, Liquidity Risk, Credit Risk, Market Risk, Business Risk, Operational Risk, and Early Warning Signs and Crisis Management, providing a comprehensive understanding of risk assessment and mitigation strategies.",
+          "page_url": "https://neuraltechsoft.com/Banking%20&%20Finance/RISK%20MANAGEMENT.pdf"
+        },
+        {
+          "name": "Treasury",
+          "description": "The Treasury program covers key topics such as Asset Liability Management, Treasury Audit, Exotic Options, Fixed Income Instruments and Markets, Treasury Products and Practices, and Interest Rates, providing in-depth knowledge of treasury operations and financial instruments.",
+          "page_url": "https://neuraltechsoft.com/Banking%20&%20Finance/TRESURY.pdf"
+        }
+      ]
+    },
+    {
+      "name": "Treasury Management",
+      "description": "Neural Tech Soft offers treasury management solutions to optimize cash flow, manage liquidity, and mitigate risks. We help businesses streamline operations, improve forecasting, and ensure compliance, guiding them to long-term financial success.",
+      "page_url": "https://neuraltechsoft.com/Risk_Management.html",
+      "sub_services": [
+        {
+          "name": "Asset Liability Management (ALM)",
+          "services": [
+            "Interest rate risk management",
+            "Liquidity gap analysis",
+            "Duration gap management",
+            "Behavioural analysis of assets/liabilities",
+            "ALM policy formulation",
+            "Stress testing frameworks"
+          ]
+        },
+        {
+          "name": " Investment Portfolio Management",
+          "services": [
+            "Investment policy formulation",
+            "Portfolio optimization strategies",
+            "Trading desk operations setup",
+            "Investment risk management",
+            "Fixed income analytics",
+            "Mark-to-market frameworks"
+          ]
+        },
+        {
+          "name": " Financial Risk Assessment",
+          "services": [
+            "Credit risk evaluation",
+            "Operational risk assessment",
+            "Market risk measurement",
+            "Risk modeling techniques",
+            "Regulatory compliance checks",
+            "Know Your Customer (KYC)"
+          ]
+        },
+        {
+          "name": "  Regulatory Compliance",
+          "services": [
+            "Basel III compliance",
+            "Anti-money laundering measures",
+            "Know Your Customer (KYC) protocols",
+            "Compliance monitoring systems"
+          ]
+        },
+        {
+          "name": "  Risk Management Strategies",
+          "services": [
+            "Hedging strategies",
+            "Risk appetite framework",
+            "Scenario analysis techniques"
+          ]
+        },
+        {
+          "name": "   Performance Evaluation",
+          "services": [
+            "Key performance indicators",
+            "Benchmarking against peers",
+            "Return on equity analysis"
+          ]
+        },
+        {
+          "name": "  Market Analysis",
+          "services": [
+            "Trend analysis",
+            "Competitor benchmarking",
+            "Market segmentation"
+          ]
+        },
+        {
+          "name": " Regulatory Reporting",
+          "services": [
+            "Monthly compliance reports",
+            "Quarterly financial disclosures",
+            "Annual audit preparations"
+          ]
+        },
+        {
+          "name": "  Strategic Planning",
+          "services": [
+            "Long-term growth strategies",
+            "Operational efficiency improvements",
+            "Stakeholder engagement plans"
+          ]
+        }
+      ],
+      "projects": {
+        "completed": [
+          {
+            "title": "Treasury Process Re-engineering",
+            "description": "Developed a custom platform for optimizing client wealth based on AI-driven analytics.",
+            "completion_date": "2024-06-15",
+            "project_url": "https://neuraltechsoft.com/Projects/TM/Treasury%20Process%20Re-engineering.pdf"
+          },
+          {
+            "title": "Tresury Risk Audit",
+            "description": "Automated risk assessment processes for a multinational bank.",
+            "completion_date": "2023-11-30",
+            "project_url": "https://neuraltechsoft.com/Projects/TM/Treasury%20Risk%20Audit.pdf"
+          }
+        ]
+      }
+    }
+  ],
+  "Contact_Us": [
+    {
+      "Contct_us_url": "https://neuraltechsoft.com/contact.html"
+    },
+    {
+      "company_name": "Neural TechSoft Pvt Ltd",
+      "address": {
+        " Building": " Vakratunda Corporate Park",
+        "office": "605-606",
+        "street": "Aarey Road (Vishweshwar Road)",
+        "Area": "Goregaon East",
+        "city": "Mumbai",
+        "state": "Maharashtra",
+        "zip_code": "400063",
+        "country": "India"
+      },
+      "contact_details": {
+        "phone": "+91 022 6699 6164 / +91 022 3513 2552 ",
+        "email": "info@neuraltechsoft.com",
+        "url": "https://neuraltechsoft.com"
+      }
+    }
+  ],
+  "partnerships": [
+    {
+      "partners": [
+        {
+          "partner_name": "Digital Technology City for Communication and Information Technology Company (DTCC)",
+          "partnership_type": "Strategic Partnership",
+          "description": "NeuralTechSoft has formed a strategic partnership with DTCC, a distinguished technology and consulting firm based in Saudi Arabia. This collaboration enables advanced solutions in Financial Consulting, Risk Management, and Algorithmic Trading, combining DTCC’s regional expertise with NeuralTechSoft’s technical strengths.",
+          "partner_url": "https://neuraltechsoft.com/partner.html",
+          "additional_info": "This alliance facilitates digital transformation for clients in the Middle East, ensuring sustainable growth and meeting both local and international standards."
+        }
+      ]
+    }
+  ]
+}
