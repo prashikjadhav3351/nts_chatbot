@@ -1,8 +1,8 @@
 Flask==2.2.5
-openai>=0.27.8,<0.28.0  # Relaxed version constraint
+openai>=0.27.8,<0.29.0  # Relaxed version
 python-dotenv==1.0.0
 langchain==0.0.208
-langchain-chroma>=0.1.0,<0.2.0  # Relaxed version constraint
+langchain-chroma>=0.1.0,<0.2.0  # Relaxed version
 langchain-openai==0.0.1
 chroma  # Specify version if needed
 groq  # Specify version if needed
