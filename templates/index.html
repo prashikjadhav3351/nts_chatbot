@@ -4,9 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NTS Q&A System</title>
+    <title></title>
     <link rel="stylesheet" href="static/css/style2.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
 </head>
 
 <body>
@@ -18,19 +20,21 @@
     <!-- Chatbot container -->
     <div id="chat-container" class="hidden">
         <div id="chat-header">
-            NTS Chatbot
+            NeuralTechSoft
             <button id="close-btn" onclick="closeChatbot()">X</button>
         </div>
         <div id="chat-box">
+
             <div class="message bot-message" id="greeting">Hello! How can I help you today?</div>
             <div class="message bot-message" id="greeting">{{ greeting }}</div>
+            <!-- all msges upends here -->
         </div>
         <div id="input-area">
             <div class="input-wrapper">
                 <input type="text" id="user-input" placeholder="Type your question..."
                     onkeypress="handleKeyPress(event)" aria-label="Type your question">
                 <div class="button-group">
-                    <button id="send-btn" onclick="sendMessage(false)" aria-label="Send message" >></button>
+                    <button id="send-btn" onclick="sendMessage(false)" aria-label="Send message">></button>
                     <button id="mic-btn" onclick="startVoiceRecognition()" aria-label="Start voice recognition">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="15"
                             height="15" margin-right="10px">
@@ -41,89 +45,19 @@
                 </div>
             </div>
         </div>
-        
+
     </div>
 
-    <script>
-const chatInput = document.getElementById('user-input');
-const sendBtn = document.getElementById('send-btn');
-
-// Show/hide send button based on input
-chatInput.addEventListener('input', () => {
-    if (chatInput.value.trim() !== '') {
-        sendBtn.style.display = 'flex';
-        sendBtn.disabled = false;
-    } else {
-        sendBtn.style.display = 'none';
-        sendBtn.disabled = true;
-    }
-});
 
 
-    </script>
+    <!-- script for the mic icon and sent btn hovers using js  -->
 
+    <script src="{{ url_for('static', filename='js/inputbox.js') }}"></script>
 
-<style>
-    #input-area {
-    display: flex;
-    justify-content: center;
-    margin: 8px;
-}
-
-.input-wrapper {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    /* max-width: 600px; */
-    border: 1px solid #ccc;
-    border-radius: 25px;
-    padding: 5px 10px;
-    background-color: #f9f9f9;
-}
-
-.input-wrapper input {
-    flex: 1;
-    border: none;
-    outline: none;
-    padding: 8px;
-    font-size: 16px;
-}
-
-.input-wrapper .button-group {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-}
-
-.input-wrapper button {
-    border: none;
-    background: none;
-    cursor: pointer;
-    display: none;
-    color: #007bff;
-    font-size: 18px;
-}
-
-#mic-btn {
-    display: flex;
-    align-items: center;
-}
-
-button:disabled {
-    color: #ccc;
-    cursor: not-allowed;
-}
-
-</style>
-
-
-
-
-
-
+    <!-- Script for the toogle after click -->
     <script src="{{ url_for('static', filename='js/scriptfortoggle.js') }}"></script>
 
-
+    <!-- Script for the all function to fronted to backend usings js and voice fucntion -->
     <script src="{{ url_for('static', filename='js/script.js') }}"></script>
 
 </body>
