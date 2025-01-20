@@ -115,7 +115,7 @@ body {
 /* Message Styles */
 .message {
     max-width: 80%;
-    padding: 15px;
+    /* padding: 55px; */
     border-radius: 10px;
     font-size: 1em;
     word-wrap: break-word;
@@ -131,7 +131,7 @@ body {
     color: #333;
     font-family: 'Arial', sans-serif;
     font-size: 0.95em;
-    padding: 15px 20px;
+    padding: 12px 17px;
     line-height: 1.5;
     position: relative;
 }
@@ -146,14 +146,14 @@ body {
     border-width:  10px 10px 0;
     border-color: transparent transparent transparent;
 }
-.bot-message ul {
-    margin: 10px 0;
+.bot-message ol {
     padding-left: 20px;
 }
 
 .bot-message ul li {
     margin-bottom: 5px;
     list-style-type: disc; /* Adds bullet points */
+    display: list-item; /* Ensures each list item is displayed on a new line */
 }
 
 
@@ -184,20 +184,22 @@ body {
 /* Typing Indicator */
 .typing-indicator {
     display: inline-block;
-    font-size: 24px;
+    font-size: 15px;
     color: #28a745;
+    position: relative;
 }
 
 .typing-indicator span {
     display: inline-block;
-    width: 8px;
-    height: 8px;
+    width: 5px;
+    height: 5px;
     margin-right: 5px;
     background-color: #28a745;
     border-radius: 50%;
     animation: typingAnimation 1.5s infinite ease-in-out;
 }
 
+/* Keyframes for typing animation */
 @keyframes typingAnimation {
     0% {
         opacity: 0;
@@ -213,6 +215,7 @@ body {
     }
 }
 
+/* Animation delays for each span */
 .typing-indicator span:nth-child(1) {
     animation-delay: 0s;
 }
@@ -225,28 +228,63 @@ body {
     animation-delay: 0.6s;
 }
 
-/* Input Area */
-/* #input-area {
-    padding: 5px;
-    border-top: 1px solid #ddd;
-} */
+/* Thinking indicator (invisible state) */
+.typing-indicator::after {
+    content: "Thinking"; /* Thinking emoji */
+    font-size: 15px;
+    /* position: centre; */
+    top: 0;
+    /* right: -30px; */
+    opacity: 0;
+    animation: thinkingAnimation 3s forwards;
+}
+
+/* Animation for showing the thinking emoji */
+@keyframes thinkingAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+
+#input-area {
+    display: flex;
+    justify-content: center;
+    margin: 8px;
+}
 
 .input-wrapper {
-    /* display: flex; */
-    /* align-items: center; */
-    /* border: 1px solid #ddd; */
-    /* border-radius: 25px; */
-    /* padding: 5px 10px; */
-    /* background-color: #f9f9f9; */
-    /* box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1); */
+    display: flex;
+    align-items: center;
+    width: 100%;
+    /* max-width: 600px; */
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    padding: 5px 10px;
+    background-color: #f9f9f9;
 }
 
-#user-input {
+.input-wrapper input {
     flex: 1;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    border: none;
+    outline: none;
+    padding: 8px;
+    font-size: 16px;
 }
+
+
+
+
+.input-wrapper .button-group {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
 
  #send-btn {
     background: linear-gradient(135deg, #3aa560 0%, #6dae17 100%);
@@ -327,38 +365,27 @@ body {
     }
 }
 
-/* Optional glowing ring around the button */
-#mic-btn::before {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    border: 2px solid rgba(40, 167, 69, 0.5);
-    border-radius: 50%;
-    animation: glow 1.5s infinite ease-in-out;
-    opacity: 0;
-    pointer-events: none;
-    z-index: 1; /* Below the SVG */
+
+
+
+
+
+
+.thinking-animation {
+    font-style: normal; /* No italic */
+    color: black; /* Black text color */
+    font-size: 20px; /* Adjust size for the chat context */
+    animation: fadeInOut 3s ease-in-out infinite; /* Fade-in and fade-out animation */
+    margin: 10px 0;
+    text-align: left;
 }
 
-/* Glow effect */
-@keyframes glow {
-    0% {
-        transform: scale(1);
-        opacity: 0.8;
-    }
-    50% {
-        transform: scale(1.5);
+@keyframes fadeInOut {
+    0%, 100% {
         opacity: 0.3;
     }
-    100% {
-        transform: scale(2);
-        opacity: 0;
+    50% {
+        opacity: 1;
     }
-}
-
-/* Activate glowing ring only when mic is active */
-#mic-btn.mic-active::before {
-    opacity: 1;
 }
 
