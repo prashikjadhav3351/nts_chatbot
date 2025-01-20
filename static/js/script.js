@@ -7,29 +7,49 @@ function sendMessage(fromVoice = false) {
     const userInput = document.getElementById('user-input').value.trim();
     if (!userInput) return;
 
+    // Append user's message
     appendMessage(userInput, 'user');
     document.getElementById('user-input').value = '';
 
-    appendMessage('<div class="typing-indicator"><span></span><span></span><span></span></div>', 'bot');
+    // Create and show the thinking animation
+    const thinkingElement = document.createElement('div');
+    thinkingElement.id = 'thinking-animation';
+    thinkingElement.textContent = '🤔 Thinking...';
+    document.getElementById('chat-box').appendChild(thinkingElement);
 
-    setTimeout(() => {
-        document.querySelector('#chat-box .typing-indicator').remove();
-        fetch('/ask', {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ question: userInput }),
-        })
+    fetch('/ask', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ question: userInput }),
+    })
         .then(response => response.json())
         .then(data => {
-            appendMessage(data.answer, 'bot');
-            if (isVoiceMessage) speakText(data.answer);
+            // Wait for 3 seconds before removing the thinking animation
+            setTimeout(() => {
+                const thinkingAnimation = document.getElementById('thinking-animation');
+                if (thinkingAnimation) thinkingAnimation.remove();
+
+                // Append the bot's message
+                appendMessage(data.answer, 'bot');
+
+                // Speak the bot's response if needed
+                if (isVoiceMessage) speakText(data.answer);
+            }, 2000); // 3-second delay
         })
         .catch(error => {
             console.error('Error:', error);
-            appendMessage('Something went wrong. Please try again.', 'bot');
+
+            // Wait for 3 seconds before removing the thinking animation
+            setTimeout(() => {
+                const thinkingAnimation = document.getElementById('thinking-animation');
+                if (thinkingAnimation) thinkingAnimation.remove();
+
+                // Show error message
+                appendMessage('Something went wrong. Please try again.', 'bot');
+            }, 1000); // 2-second delay
         });
-    }, 2000);
 }
+
 
 function appendMessage(message, sender) {
     const chatBox = document.getElementById('chat-box');
